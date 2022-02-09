@@ -13,13 +13,13 @@ function getPosition() {
 }
 
 function showLocation(position) {
-    console.log(position);
-    document.getElementById("latitude").innerHTML = position.coords.latitude;
-    document.getElementById("longitude").innerHTML = position.coords.longitude;
-    document.getElementById("accuracy").innerHTML = position.coords.accuracy;
+    // console.log(position);
+    // document.getElementById("latitude").innerHTML = position.coords.latitude;
+    // document.getElementById("longitude").innerHTML = position.coords.longitude;
+    // document.getElementById("accuracy").innerHTML = position.coords.accuracy;
 
-    var date = new Date(position.timestamp);
-    document.getElementById("timestamp").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    // var date = new Date(position.timestamp);
+    // document.getElementById("timestamp").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     initMap(position.coords.latitude, position.coords.longitude);
 }
 
