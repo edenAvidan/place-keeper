@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>User Settings</title>
+</head>
+
+<body onload="onInit()">
+    <main>
+        <form onsubmit="onSetUserInfo(event)" class="user-settings">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Insert your email here" required />
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="range" id="age" onchange="showAge()" />
+                <span class="current-age"></span>
+            </div>
+
+            <div>
+                <label for="bg-color">Set Background Color</label>
+                <input type="color" id="bg-color" />
+            </div>
+
+            <div>
+                <label for="txt-color">Set Text Color</label>
+                <input type="color" id="txt-color" />
+            </div>
+
+            <div>
+                <label for="birth-day">Birth Day</label>
+                <input type="date" id="birth-day" required />
+            </div>
+
+            <div>
+                <label for="email">Birth Time</label>
+                <input type="time" id="birth-time" required />
+            </div>
+            <button>Set</button>
+        </form>
+    </main>
+
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/controllers/userSettingsController.js"></script>
+</body>
+
+</html>

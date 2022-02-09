@@ -1,0 +1,18 @@
+.user-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-settings div {
+    background-color: red;
+    margin-bottom: 5px;
+    width: 30vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.user-settings label {
+    margin-right: 5px;
+}
